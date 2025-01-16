@@ -17,9 +17,9 @@ function calculateTotalPrice() {
     }
     return totalPrice;
 }
-
+//coin calculating
 function calculateChangeInCoins(change) {
-    var denominations = [1, 2, 5, 10]; // Coin denominations in ascending order
+    var denominations = [1, 2, 5, 10]; // Coin denominations in increasing order
     var coins = {};
     for (var i = denominations.length - 1; i >= 0 && change > 0; i--) {
         var denomination = denominations[i];
@@ -43,5 +43,5 @@ var items = document.getElementsByClassName('item');
 for (var i = 0; i < items.length; i++) {
     items[i].addEventListener('click', function() {
         this.classList.toggle('selected');
-    });
+    }); 
 }
